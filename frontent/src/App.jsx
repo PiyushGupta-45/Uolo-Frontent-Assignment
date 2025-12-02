@@ -5,7 +5,6 @@ import UserCard from './UserCard';
 function App() {
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(0);
-  const limit = 5;
   
   const fetchUsers = async () =>{
     const response = await fetch("https://dummyjson.com/users?skip=0&limit=10");
